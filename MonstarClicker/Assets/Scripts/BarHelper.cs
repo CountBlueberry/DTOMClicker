@@ -22,7 +22,7 @@ public class BarHelper : MonoBehaviour
         set { healthBarText.text = value.ToString(); }
     }
 
-    public void HealthBarUpdate(float health)// checks monster health and updated after each hit from players or comrades
+    public void HealthBarUpdate(float health)   // checks monster health and updated after each hit from players or comrades
     {
         healthBar.fillAmount = health / 100.0f;
         healthBarText.text = health.ToString();

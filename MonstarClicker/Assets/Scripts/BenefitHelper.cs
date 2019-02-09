@@ -6,7 +6,7 @@ public class BenefitHelper : MonoBehaviour
 {
     [Header("Gold and Ruby variables")]
 
-    private int monsterGold = 0; // Mons
+    private int monsterGold = 0; 
 
     #region Monster Gold set and get functions
     public void SetGold(int monsterGold)
@@ -26,7 +26,7 @@ public class BenefitHelper : MonoBehaviour
     }
     #endregion
 
-    public void GoldMonsterUpdateFunction(float _health)
+    public void GoldMonsterUpdateFunction(float _health) // Function to give gold after killing enemy
     {
         monsterGold = (int)_health;
 
